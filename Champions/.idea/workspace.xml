@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aea9a75-f88a-46d9-9587-29c3e4be8eec" name="Default Changelist" comment="" />
+    <list default="true" id="7aea9a75-f88a-46d9-9587-29c3e4be8eec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Colecciones/src/inicio/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Colecciones/src/inicio/AgendaHashtables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Taller/Taller/Taller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taller/Taller/Taller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Taller/Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taller/Taller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colecciones/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Colecciones/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1W9fsGBc2hMx7w8aF9IuBhahjfu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +34,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Taller (1)">
     <configuration name="Taller (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -50,56 +64,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Taller" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Taller" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Taller" />
       <item itemvalue="Application.Taller (1)" />
+      <item itemvalue="Application.Taller" />
     </list>
     <recent_temporary>
       <list>
@@ -138,41 +105,57 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1578569759211" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1578569807402">
+    <state x="530" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1578645744275">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578569807402" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1578569807402">
+    <state x="530" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1578645744275" />
+    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1578657546869">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1578569807402" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1578569807402">
+    <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1578657546869" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1579172848150">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1578569807402" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1578569807402">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1579172848150" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1579172848150">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1578569807402" />
-    <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1578569737185">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1579172848150" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1579172848150">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578569737185" />
-    <state width="1557" height="276" key="GridCell.Tab.1.center" timestamp="1578569737185">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1579172848150" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1579172848150">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1578569737185" />
-    <state width="1557" height="276" key="GridCell.Tab.1.left" timestamp="1578569737185">
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1579172848150" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1578570934785">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1578569737185" />
-    <state width="1557" height="276" key="GridCell.Tab.1.right" timestamp="1578569737185">
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578570934785" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center" timestamp="1578570934785">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1578569737185" />
-    <state x="525" y="56" width="607" height="804" key="find.popup" timestamp="1578570656125">
+    <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1578570934785" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left" timestamp="1578570934785">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="525" y="56" width="607" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1578570656125" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1578570934785" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right" timestamp="1578570934785">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1578570934785" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1578657527817">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1578657527817" />
+    <state x="501" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1578643106560">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="501" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1578643106560" />
+    <state x="525" y="56" width="607" height="804" key="find.popup" timestamp="1578653345434">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="525" y="56" width="607" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1578653345434" />
   </component>
 </project>

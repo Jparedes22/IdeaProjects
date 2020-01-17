@@ -19,6 +19,7 @@ public class EntradaTrigonometria {
             opcion = sc.nextInt();
             switch (opcion) {
                 case 1:
+                    //TRIANGULO
                     do {
                         System.out.println("Introuce base");
                         int base = sc.nextInt();
@@ -34,6 +35,7 @@ public class EntradaTrigonometria {
                             case 2:
                                 break;
                             case 3:
+                                System.out.println("Saliendo...");
                                 break;
                             default:
                                 System.out.println("Introduce una opción válida");
@@ -42,6 +44,7 @@ public class EntradaTrigonometria {
 
                     break;
                 case 2:
+                    // CIRCULO
                     System.out.println("Introduce diametro");
                     int diametro = sc.nextInt();
                     System.out.println("¿Qué operación quieres hacer?");
@@ -52,19 +55,25 @@ public class EntradaTrigonometria {
                     opcionC = sc.nextInt();
                     switch (opcionC) {
                         case 1:
+
                             break;
                         case 2:
+
                             break;
                         case 3:
+
                             break;
                         case 4:
+                            System.out.println("Saliendo...");
                             break;
                         default:
+                            System.out.println("Introduce una opción válida");
                             break;
 
                     }
                     break;
                 case 3:
+                    //CUADRADO
 
                     break;
                 case 4:
