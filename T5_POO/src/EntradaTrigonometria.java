@@ -76,6 +76,7 @@ public class EntradaTrigonometria {
                     //CUADRADO
 
                     break;
+                    
                 case 4:
 
                     break;

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64454be3-1656-482e-8f57-55dfc50d150d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Champions/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inicio/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inicio/AgendaHashtables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Champions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Champions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Champions/out/production/Taller/Taller/Taller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Champions/out/production/Taller/Taller/Taller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Champions/src/Taller/Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Champions/src/Taller/Taller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EntornoDesarrollos/src/UR/FMSESP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EntornoDesarrollos/src/UR/FMSESP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T5_POO/src/EntradaTrigonometria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../T5_POO/src/EntradaTrigonometria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Champions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
