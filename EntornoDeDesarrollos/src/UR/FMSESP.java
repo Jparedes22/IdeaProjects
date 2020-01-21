@@ -153,14 +153,14 @@ public class FMSESP {
                     break;
                 case "7":
                     //MR EGO
-                    System.out.println("J1. Victoria");
-                    System.out.println("J2. Victoria");
-                    System.out.println("J3. Victoria");
-                    System.out.println("J4. Victoria");
-                    System.out.println("J5. Victoria");
-                    System.out.println("J6. Derrota con Réplica");
-                    System.out.println("J7. Victoria");
-                    System.out.println("J8. Derrota");
+                    System.out.println("J1. Derrota con Réplica");
+                    System.out.println("J2. Derrota");
+                    System.out.println("J3. Victoria con Réplica");
+                    System.out.println("J4. Derrota con Réplica");
+                    System.out.println("J5. Victoria con Réplica");
+                    System.out.println("J6. Victoria");
+                    System.out.println("J7. Derrota");
+                    System.out.println("J8. Derrota con Réplica");
                     System.out.println("J9. Derrota");
                     System.out.println("");
                     System.out.println("===========================================");
@@ -168,29 +168,29 @@ public class FMSESP {
                     break;
                 case "8":
                     //ZASKO
-                    System.out.println("J1. Victoria");
-                    System.out.println("J2. Victoria");
-                    System.out.println("J3. Victoria");
-                    System.out.println("J4. Victoria");
-                    System.out.println("J5. Victoria");
-                    System.out.println("J6. Derrota con Réplica");
-                    System.out.println("J7. Victoria");
+                    System.out.println("J1. Victoria con Réplica");
+                    System.out.println("J2. Derrota");
+                    System.out.println("J3. Derrota");
+                    System.out.println("J4. Derrota");
+                    System.out.println("J5. Derrota");
+                    System.out.println("J6. Victoria con Réplica");
+                    System.out.println("J7. Derrota");
                     System.out.println("J8. Derrota");
-                    System.out.println("J9. Derrota");
+                    System.out.println("J9. Victoria");
                     System.out.println("");
                     System.out.println("===========================================");
 
                     break;
                 case "9":
                     //FORCE
-                    System.out.println("J1. Victoria");
-                    System.out.println("J2. Victoria");
-                    System.out.println("J3. Victoria");
+                    System.out.println("J1. Derrota");
+                    System.out.println("J2. Derrota");
+                    System.out.println("J3. Derrota");
                     System.out.println("J4. Victoria");
-                    System.out.println("J5. Victoria");
-                    System.out.println("J6. Derrota con Réplica");
-                    System.out.println("J7. Victoria");
-                    System.out.println("J8. Derrota");
+                    System.out.println("J5. Victoria con Réplica");
+                    System.out.println("J6. Derrota");
+                    System.out.println("J7. Derrota");
+                    System.out.println("J8. Victoria con Réplica");
                     System.out.println("J9. Derrota");
                     System.out.println("");
                     System.out.println("===========================================");
@@ -198,14 +198,14 @@ public class FMSESP {
                     break;
                 case "10":
                     //BTA
-                    System.out.println("J1. Victoria");
-                    System.out.println("J2. Victoria");
-                    System.out.println("J3. Victoria");
+                    System.out.println("J1. Derrota");
+                    System.out.println("J2. Derrota");
+                    System.out.println("J3. Victoria con Réplica");
                     System.out.println("J4. Victoria");
-                    System.out.println("J5. Victoria");
-                    System.out.println("J6. Derrota con Réplica");
-                    System.out.println("J7. Victoria");
-                    System.out.println("J8. Derrota");
+                    System.out.println("J5. Derrota con Réplica");
+                    System.out.println("J6. Derrota");
+                    System.out.println("J7. Derrota");
+                    System.out.println("J8. Victoria");
                     System.out.println("J9. Derrota");
                     System.out.println("");
                     System.out.println("===========================================");
