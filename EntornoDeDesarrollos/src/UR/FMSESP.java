@@ -1,13 +1,16 @@
 package UR;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class FMSESP {
     static Scanner sc = new Scanner(System.in);
-    static int opcionDos;
+    static String opcionDos;
 
     public static void main(String[] args) {
-        int opcion;
+        String opcion;
+        String[] mc = {"Chuty", "Skone", "Bnet", "Blon"};
+
 
         do {
             System.out.println("1. Ver Tabla");
@@ -15,26 +18,33 @@ public class FMSESP {
             System.out.println("3. Ver Ascenso");
             System.out.println("4. Salir");
             System.out.println("Elige la opción que quieras");
-            opcion = sc.nextInt();
+            opcion = sc.next();
+            if (!opcion.equals("1") && !opcion.equals("2") && !opcion.equals("3") && !opcion.equals("4")) {
+            }else{
             switch (opcion) {
-                case 1:
+
+                case "1":
                     tabla();
                     break;
-                case 2:
+
+                case "2":
                     participantes();
 
                     break;
-                case 3:
+
+                case "3":
                     ascenso();
                     break;
-                case 4:
+
+                case "4":
                     System.out.println("Saliendo...");
                     break;
-                default:
-                    System.out.println("Introduce una opción válida");
-                    break;
+
+
+
             }
-        } while (opcion != 4);
+        }
+        } while (!opcion.equalsIgnoreCase("4"));
     }
 
     public static void participantes() {
@@ -54,10 +64,14 @@ public class FMSESP {
             System.out.println("===========================================");
             System.out.println("Elige la opción que quieras");
 
-            opcionDos=sc.nextInt();
-
+            opcionDos = sc.next();
+            if (!opcionDos.equals("1") && !opcionDos.equals("2") && !opcionDos.equals("3") && !opcionDos.equals("4")
+                    && !opcionDos.equals("5") && !opcionDos.equals("6")
+                    && !opcionDos.equals("7") && !opcionDos.equals("8")
+                    && !opcionDos.equals("9") && !opcionDos.equals("10") ) {
+            } else {
             switch (opcionDos) {
-                case 1:
+                case "1":
                     System.out.println("J1. Victoria");
                     System.out.println("J2. Victoria");
                     System.out.println("J3. Victoria");
@@ -70,7 +84,7 @@ public class FMSESP {
                     System.out.println("");
                     System.out.println("===========================================");
                     break;
-                case 2:
+                case "2":
                     System.out.println("J1. Victoria");
                     System.out.println("J2. Victoria");
                     System.out.println("J3. Derrota");
@@ -83,7 +97,7 @@ public class FMSESP {
                     System.out.println("");
                     System.out.println("===========================================");
                     break;
-                case 3:
+                case "3":
                     System.out.println("J1. Victoria");
                     System.out.println("J2. Victoria");
                     System.out.println("J3. Victoria");
@@ -96,9 +110,113 @@ public class FMSESP {
                     System.out.println("");
                     System.out.println("===========================================");
                     break;
+                case "4":
+                    System.out.println("J1. Derrota con Réplica");
+                    System.out.println("J2. Victoria");
+                    System.out.println("J3. Derrota");
+                    System.out.println("J4. Victoria con Réplica");
+                    System.out.println("J5. Derrota");
+                    System.out.println("J6. Victoria");
+                    System.out.println("J7. Victoria");
+                    System.out.println("J8. Derrota con Réplica");
+                    System.out.println("J9. Victoria");
+                    System.out.println("");
+                    System.out.println("===========================================");
+                    break;
+                case "5":
+                    System.out.println("J1. Victoria con Réplica");
+                    System.out.println("J2. Victoria");
+                    System.out.println("J3. Derrota con Réplica");
+                    System.out.println("J4. Victoria");
+                    System.out.println("J5. Derrota");
+                    System.out.println("J6. Derrota");
+                    System.out.println("J7. Derrota");
+                    System.out.println("J8. Derrota");
+                    System.out.println("J9. Victoria");
+                    System.out.println("");
+                    System.out.println("===========================================");
+                    break;
+                case "6":
+                    //WALLS
+                    System.out.println("J1. Derrota con Réplica");
+                    System.out.println("J2. Derrota");
+                    System.out.println("J3. Victoria");
+                    System.out.println("J4. Derrota");
+                    System.out.println("J5. Derrota conn Réplica");
+                    System.out.println("J6. Derrota");
+                    System.out.println("J7. Victoria");
+                    System.out.println("J8. Victoria");
+                    System.out.println("J9. Derrota");
+                    System.out.println("");
+                    System.out.println("===========================================");
+
+                    break;
+                case "7":
+                    //MR EGO
+                    System.out.println("J1. Victoria");
+                    System.out.println("J2. Victoria");
+                    System.out.println("J3. Victoria");
+                    System.out.println("J4. Victoria");
+                    System.out.println("J5. Victoria");
+                    System.out.println("J6. Derrota con Réplica");
+                    System.out.println("J7. Victoria");
+                    System.out.println("J8. Derrota");
+                    System.out.println("J9. Derrota");
+                    System.out.println("");
+                    System.out.println("===========================================");
+
+                    break;
+                case "8":
+                    //ZASKO
+                    System.out.println("J1. Victoria");
+                    System.out.println("J2. Victoria");
+                    System.out.println("J3. Victoria");
+                    System.out.println("J4. Victoria");
+                    System.out.println("J5. Victoria");
+                    System.out.println("J6. Derrota con Réplica");
+                    System.out.println("J7. Victoria");
+                    System.out.println("J8. Derrota");
+                    System.out.println("J9. Derrota");
+                    System.out.println("");
+                    System.out.println("===========================================");
+
+                    break;
+                case "9":
+                    //FORCE
+                    System.out.println("J1. Victoria");
+                    System.out.println("J2. Victoria");
+                    System.out.println("J3. Victoria");
+                    System.out.println("J4. Victoria");
+                    System.out.println("J5. Victoria");
+                    System.out.println("J6. Derrota con Réplica");
+                    System.out.println("J7. Victoria");
+                    System.out.println("J8. Derrota");
+                    System.out.println("J9. Derrota");
+                    System.out.println("");
+                    System.out.println("===========================================");
+
+                    break;
+                case "10":
+                    //BTA
+                    System.out.println("J1. Victoria");
+                    System.out.println("J2. Victoria");
+                    System.out.println("J3. Victoria");
+                    System.out.println("J4. Victoria");
+                    System.out.println("J5. Victoria");
+                    System.out.println("J6. Derrota con Réplica");
+                    System.out.println("J7. Victoria");
+                    System.out.println("J8. Derrota");
+                    System.out.println("J9. Derrota");
+                    System.out.println("");
+                    System.out.println("===========================================");
+
+                    break;
             }
-        } while (opcionDos != 11);
-    }
+        }
+            }
+            while (!opcionDos.equalsIgnoreCase("11")) ;
+        }
+
 
     public static void ascenso() {
         System.out.println("1. Mnak 104.750 pts");

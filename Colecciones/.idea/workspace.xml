@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64454be3-1656-482e-8f57-55dfc50d150d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../EntornoDesarrollos/src/UR/FMSESP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EntornoDesarrollos/src/UR/FMSESP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T5_POO/src/EntradaTrigonometria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../T5_POO/src/EntradaTrigonometria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EntornoDeDesarrollos/src/UR/FMSESP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EntornoDeDesarrollos/src/UR/FMSESP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EntornoDesarrollos" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -134,10 +133,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="446" y="25" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1578657328955" />
-    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1579162562788">
+    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1579599743113">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579162562788" />
+    <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579599743113" />
     <state width="1557" height="163" key="GridCell.Tab.0.bottom" timestamp="1579172882489">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
