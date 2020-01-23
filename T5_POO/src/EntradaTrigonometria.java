@@ -37,7 +37,7 @@ public class EntradaTrigonometria {
                         opcionT = sc.nextInt();
                         switch (opcionT) {
                             case 1:
-                                miTri.calcularArea();
+                                miTri.getArea();
 
                                 break;
                             case 2:
@@ -127,7 +127,7 @@ public class EntradaTrigonometria {
                     System.out.println("Saliendo...");
                     break;
                 default:
-                    System.out.println("Introduce una opcion correcta");
+                    System.out.println("Introduce una opcion válida");
             }
         } while (opcion != 4);
     }

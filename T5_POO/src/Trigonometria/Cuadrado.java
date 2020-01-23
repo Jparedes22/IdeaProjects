@@ -1,4 +1,4 @@
-package Inicial;
+package Trigonometria;
 
 public class Cuadrado {
     private int base, altura;
