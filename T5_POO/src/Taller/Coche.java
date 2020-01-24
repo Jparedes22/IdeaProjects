@@ -1,4 +1,4 @@
-package Inicial;
+package Taller;
 
 public class Coche {
     //variables de clase --> Propiedades, Caraterísticas

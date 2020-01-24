@@ -1,7 +1,7 @@
-import Inicial.Coche;
-import Inicial.Motor;
+import Taller.Coche;
+import Taller.Motor;
 
-public class Entrada {
+public class EntradaTaller {
     public static void main(String[] args) {
 
 
