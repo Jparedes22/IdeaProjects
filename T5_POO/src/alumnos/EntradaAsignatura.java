@@ -1,3 +1,5 @@
+package alumnos;
+
 import alumnos.Alumno;
 import alumnos.Asignatura;
 import alumnos.Profesor;

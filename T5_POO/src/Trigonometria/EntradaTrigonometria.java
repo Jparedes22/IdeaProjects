@@ -1,3 +1,5 @@
+package Trigonometria;
+
 import Trigonometria.Circulo;
 import Trigonometria.Cuadrado;
 import Trigonometria.Triangulo;
