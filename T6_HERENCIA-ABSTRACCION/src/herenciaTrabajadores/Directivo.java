@@ -1,4 +1,6 @@
 package herenciaTrabajadores;
 
-public class Directivo {
+public class Directivo extends Persona {
+    
+
 }

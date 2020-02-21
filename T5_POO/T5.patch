@@ -1,0 +1,962 @@
+Index: T5_POO/src/ConsumicionAplicacion/Cuenta.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/ConsumicionAplicacion/Cuenta.java	(revision de86528982835a4bf5c0f20f92af17612506098a)
++++ T5_POO/src/ConsumicionAplicacion/Cuenta.java	(date 1580979533143)
+@@ -3,27 +3,43 @@
+ import java.util.ArrayList;
+ 
+ public class Cuenta {
+-    ArrayList<Articulo> cuenta=new ArrayList<>();
+-    int id;
+-    boolean estado;
++    private ArrayList<Articulo> listaArticulos = new ArrayList<>();
++    private int id;
++    private boolean estado;
++
++
++    public Cuenta(int id) {
++        this.id = id;
++        this.estado=false;
++        listaArticulos=new ArrayList();
++    }
++
+     public void agregarArticulos(Articulo articulo) {
+-cuenta.add(articulo);
++        this.listaArticulos.add(articulo);
+     }
+-    public int numeroArt(){
+-        cuenta.size();
+-        return cuenta.size();
++
++    public int getNumeroArt() {
++        listaArticulos.size();
++        return listaArticulos.size();
+     }
+ 
+-public double costeTotal(){
+-        double costeTotal=0.0;
+-    for (Articulo coste:cuenta) {
+-        costeTotal+=coste.getCoste();
+-    }
+-    return costeTotal;
+-}
++    public double getCosteTotal() {
++        double costeTotal = 0.0;
++        for (Articulo coste : listaArticulos) {
++            costeTotal += coste.getCoste();
++        }
++        return costeTotal;
++    }
+ 
+-    public void setEstado(){
+-        this.estado=estado;
++    public void setEstado(boolean estado) {
++        this.estado = estado;
+     }
+ 
++    public int getId() {
++        return id;
++    }
++
++    public boolean isEstado() {
++        return estado;
++    }
+ }
+Index: T5_POO/src/Herencia2/EntradaHerencia2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/EntradaHerencia2.java	(date 1581070941101)
++++ T5_POO/src/Herencia2/EntradaHerencia2.java	(date 1581070941101)
+@@ -0,0 +1,35 @@
++package Herencia2;
++
++import java.util.ArrayList;
++
++public class EntradaHerencia2 {
++
++    public static void main(String[] args) {
++
++
++        Trabajador trabajador = new Trabajador("nombre trabajador", "apellido trabajador");
++        Trabajador trabajador2 = new Trabajador("nombre trabajador", "apellido trabajador", 1000);
++
++        trabajador.mostrarDatos();
++
++        Jefe jefe = new Jefe("nombre jefe", "apellido jefe", 10000, 8);
++        trabajador.mostrarDatos();
++        trabajador.mostrarDatos();
++        JefeSupremo jefeSupremo = new JefeSupremo("edw", "wjefb", 3333, 87);
++        jefe.despedir();
++
++        System.out.println(trabajador.getClass().getSimpleName());
++
++        ArrayList<Trabajador> listaTrabajadores = new ArrayList();
++        listaTrabajadores.add(trabajador);
++        listaTrabajadores.add(trabajador2);
++        listaTrabajadores.add(jefe);
++        listaTrabajadores.add(jefeSupremo);
++
++        ArrayList<Jefe> listaJefes = new ArrayList();
++        listaJefes.add(jefe);
++        listaJefes.add(jefeSupremo);
++        ArrayList<JefeSupremo> listaJefesSupremos = new ArrayList();
++        listaJefesSupremos.add(jefeSupremo);
++    }
++}
+Index: T5_POO/src/Herencia2/Trabajador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/Trabajador.java	(date 1581070766079)
++++ T5_POO/src/Herencia2/Trabajador.java	(date 1581070766079)
+@@ -0,0 +1,20 @@
++package Herencia2;
++
++public class Trabajador extends PersonaH {
++    protected int sueldo;
++
++    public Trabajador(String nombreNuevo, String apellidoNuevo) {
++        super(nombreNuevo, apellidoNuevo);
++    }
++
++    public Trabajador(String nombreNuevo, String apellidoNuevo, int sueldo) {
++        super(nombreNuevo, apellidoNuevo);
++        this.sueldo = sueldo;
++    }
++
++    @Override
++    public void mostrarDatos() {
++        super.mostrarDatos();
++        System.out.println("Tambié lo llamo desde Trabajador");
++    }
++}
+Index: T5_POO/src/Herencia2/Jefe.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/Jefe.java	(date 1581070766162)
++++ T5_POO/src/Herencia2/Jefe.java	(date 1581070766162)
+@@ -0,0 +1,23 @@
++package Herencia2;
++
++import herencia.Persona;
++
++public class Jefe extends Trabajador {
++    protected int horas;
++
++    public Jefe(String nombreNuevo, String apellidoNuevo, int sueldo) {
++        super(nombreNuevo, apellidoNuevo, sueldo);
++        this.horas = horas;
++
++    }
++
++    public Jefe(String nombreNuevo, String apellidoNuevo, int sueldo, int horas) {
++        super(nombreNuevo, apellidoNuevo, sueldo);
++        this.horas = horas;
++    }
++
++    public void despedir() {
++
++    }
++}
++
+Index: T5_POO/src/cajero/Persona.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/cajero/Persona.java	(date 1581068068193)
++++ T5_POO/src/cajero/Persona.java	(date 1581068068193)
+@@ -0,0 +1,54 @@
++package cajero;
++
++import java.util.ArrayList;
++
++public class Persona {
++    private String nombre, apellido, dni;
++
++    ArrayList<Cuenta> listaCuentas;
++
++    public Persona(String nombre, String apellido, String dni, Cuenta cuenta) {
++        this.nombre = nombre;
++        this.apellido = apellido;
++        this.dni = dni;
++        this.listaCuentas = new ArrayList();
++        this.listaCuentas.add(cuenta);
++    }
++
++    public Persona(String nombre, String apellido, String dni) {
++        this.nombre = nombre;
++        this.apellido = apellido;
++        this.dni = dni;
++        this.listaCuentas=new ArrayList();
++    }
++
++    public void agregarCuenta(Cuenta nuevaCuenta){
++        this.listaCuentas.add(nuevaCuenta);
++    }
++
++    public void listarCuentas(){
++        if(listaCuentas.isEmpty()){
++            System.out.println("No tienes cuentas");
++        }else{
++            double saldoTotal = 0.0;
++            System.out.println("El saldo de cada una de tus cuentas es: ");
++            for (Cuenta cuenta : this.listaCuentas) {
++               // cuenta.mostrarEstado();
++                //saldoTotal += cuenta.getSaldo();
++            }
++            System.out.printf("El saldo total de tus cuentas es: %.2f %n", saldoTotal);
++        }
++    }
++
++    public String getNombre() {
++        return nombre;
++    }
++
++    public String getApellido() {
++        return apellido;
++    }
++
++    public String getDni() {
++        return dni;
++    }
++}
+Index: T5_POO/src/cajero/Cuenta.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/cajero/Cuenta.java	(date 1580472818492)
++++ T5_POO/src/cajero/Cuenta.java	(date 1580472818492)
+@@ -0,0 +1,73 @@
++package cajero;
++
++public class Cuenta {
++
++
++    private int pin, id;
++    private double saldo;
++
++
++    /*public int getId() {
++        return id;
++    }
++
++    public int getPin() {
++        return pin;
++    }
++
++    public void setId(int id) {
++        this.id = id;
++    }
++
++    public double getSaldo() {
++        return saldo;
++    }
++
++
++    public void setPin(int pin) {
++        this.pin = pin;
++    }
++
++
++    public void setSaldo(double saldo) {
++        this.saldo = saldo;
++    }
++
++
++    public void ingresar(double saldoIng) {
++        if (saldoIng > 0) {
++            this.saldo += saldoIng;
++        } else {
++            System.out.println("No puedes hacer esa operación");
++        }
++
++    }
++
++    public void sacar(double saldoSac) {
++        if (saldoSac < 0 || (this.saldo - saldoSac) < 0) {
++            System.out.println("No puedes hacer la operacion");
++        } else {
++            this.saldo -= saldoSac;
++        }
++
++    }
++
++    public void mostrarEstado() {
++ double saldoTotal=0.0;
++        System.out.printf("El saldo de la cuenta es: %.2f %n", this.saldo);
++    }
++*/
++
++    public Cuenta(int id, int pin, double saldo) {
++        this.id = id;
++        this.saldo = saldo;
++        this.pin = pin;
++    }
++/*
++    public Cuenta(int id, int pin) {
++        this.id = id;
++        this.pin = pin;
++    }
++
++*/
++}
+Index: T5_POO/src/ConsumicionAplicacion/Articulo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/ConsumicionAplicacion/Articulo.java	(revision de86528982835a4bf5c0f20f92af17612506098a)
++++ T5_POO/src/ConsumicionAplicacion/Articulo.java	(date 1580977242849)
+@@ -2,19 +2,19 @@
+ 
+ 
+ public class Articulo {
+-    String nombre;
+-    int coste;
++    private String nombre;
++    private double coste;
+ 
+-    public Articulo(String nombre, int coste ){
+-        this.nombre=nombre;
+-        this.coste=coste;
++    public Articulo(String nombre, double coste) {
++        this.nombre = nombre;
++        this.coste = coste;
+     }
+ 
+-    public void setCoste(int coste) {
++    public void setCoste(double coste) {
+         this.coste = coste;
+     }
+ 
+-    public int getCoste() {
++    public double getCoste() {
+         return coste;
+     }
+ }
+Index: T5_POO/src/Herencia2/JefeSupremo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/JefeSupremo.java	(date 1581070766218)
++++ T5_POO/src/Herencia2/JefeSupremo.java	(date 1581070766218)
+@@ -0,0 +1,8 @@
++package Herencia2;
++
++public class JefeSupremo extends Jefe {
++
++    public JefeSupremo(String nombreNuevo, String apellidoNuevo, int sueldo, int horas) {
++        super(nombreNuevo, apellidoNuevo, sueldo, horas);
++    }
++}
+Index: T5_POO/src/Herencia2/Puntos/Punto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/Puntos/Punto.java	(date 1581074346476)
++++ T5_POO/src/Herencia2/Puntos/Punto.java	(date 1581074346476)
+@@ -0,0 +1,24 @@
++package Herencia2.Puntos;
++
++
++import java.awt.*;
++
++public class Punto {
++    Point point;
++    int x;
++    int y;
++
++    public Punto(int x, int y) {
++
++        this.x = x;
++        this.y = y;
++    }
++
++    public void mover(int x, int y) {
++        point.move(1, 2);
++    }
++
++    public void trasladar(int dx, int dy) {
++        point.translate(4, 5);
++    }
++}
+Index: T5_POO/src/herencia/Persona.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/herencia/Persona.java	(date 1580470132836)
++++ T5_POO/src/herencia/Persona.java	(date 1580470132836)
+@@ -0,0 +1,46 @@
++package herencia;
++
++public class Persona {
++    private String nombre, apellido, dni;
++
++    public Persona(String nombre, String apellido, String dni) {
++        this.nombre = nombre;
++        this.apellido = apellido;
++        this.dni = dni;
++
++    }
++    public Persona(){
++
++    }
++
++
++    public String getNombre() {
++        return nombre;
++    }
++
++    public String getApellido() {
++        return apellido;
++    }
++
++    public String getDni() {
++        return dni;
++    }
++
++    public void setNombre(String nombre) {
++        this.nombre = nombre;
++    }
++
++    public void setApellido(String apellido) {
++        this.apellido = apellido;
++    }
++
++
++    public void setDni(String dni) {
++        this.dni = dni;
++    }
++
++   /* @Override
++    public String toString() {
++        return super.toString() + " " + getNombre();
++    }*/
++}
+Index: T5_POO/src/Herencia2/Puntos/Punto3D.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/Puntos/Punto3D.java	(date 1581074882373)
++++ T5_POO/src/Herencia2/Puntos/Punto3D.java	(date 1581074882373)
+@@ -0,0 +1,35 @@
++package Herencia2.Puntos;
++
++import java.awt.*;
++
++public class Punto3D extends Punto {
++
++    protected int z;
++
++    public Punto3D( int x, int y, int z) {
++
++        super(x, y);
++        this.z = z;
++    }
++
++
++    public void mover(int x, int y, int z) {
++        super.mover(x, y);
++        this.z = z;
++    }
++
++
++    public void trasladar(int dx, int dy, int dz) {
++        super.trasladar(dx, dy);
++        this.z += dz;
++    }
++
++    @Override
++    public String toString() {
++        return "Punto3D{" +
++                "z=" + z +
++                ", x=" + x +
++                ", y=" + y +
++                '}';
++    }
++}
+Index: T5_POO/src/herencia/Entrada.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/herencia/Entrada.java	(date 1580470132820)
++++ T5_POO/src/herencia/Entrada.java	(date 1580470132820)
+@@ -0,0 +1,14 @@
++package herencia;
++
++import equipo.TrabajadorAsalariado;
++
++public class Entrada {
++    public static void main(String[] args) {
++        Persona persona2=new Persona();
++        Persona persona=new Persona("nombre","apellido","dni");
++        TrabajadorAsalariado persona3=new TrabajadorAsalariado("NASALARIADO","AASALARIADO",
++                "DASALARIADO",14,3000);
++
++
++    }
++}
+Index: T5_POO/src/Herencia2/Puntos/Punto4D.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/Puntos/Punto4D.java	(date 1581074882342)
++++ T5_POO/src/Herencia2/Puntos/Punto4D.java	(date 1581074882342)
+@@ -0,0 +1,34 @@
++package Herencia2.Puntos;
++
++import java.awt.*;
++
++public class Punto4D extends Punto3D {
++    protected int w;
++
++    public Punto4D(int x, int y, int z, int w) {
++        super(x, y, z);
++        this.w = w;
++    }
++
++
++    public void mover(int x, int y, int z, int w) {
++        super.mover(x, y, z);
++        this.w = w;
++    }
++
++
++    public void trasladar(int dx, int dy, int dz, int dw) {
++        super.trasladar(dx, dy, dz);
++        this.w += dw;
++    }
++
++    @Override
++    public String toString() {
++        return "Punto4D{" +
++                "w=" + w +
++                ", z=" + z +
++                ", x=" + x +
++                ", y=" + y +
++                '}';
++    }
++}
+Index: T5_POO/src/Herencia2/Puntos/EntradaPuntos.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/Puntos/EntradaPuntos.java	(date 1581076114203)
++++ T5_POO/src/Herencia2/Puntos/EntradaPuntos.java	(date 1581076114203)
+@@ -0,0 +1,23 @@
++package Herencia2.Puntos;
++
++import java.awt.*;
++
++public class EntradaPuntos {
++    public static void main(String[] args) {
++        Point punto2D = new Point();
++        Punto3D punto3D = new Punto3D(5, 5, 5);
++        Punto4D punto4D = new Punto4D(10, 10, 10, 10);
++
++        System.out.println(punto2D.toString());
++        System.out.println(punto3D.toString());
++        System.out.println(punto4D.toString());
++
++        punto2D.move(1,1);
++        System.out.println(punto2D.toString());
++        punto2D.translate(3,2);
++        System.out.println(punto2D.toString());
++
++        punto3D.mover(0,0,0);
++        System.out.println(punto3D.toString());
++    }   
++}
+Index: T5_POO/src/equipo/TrabajadorAsalariado.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/equipo/TrabajadorAsalariado.java	(date 1580470132784)
++++ T5_POO/src/equipo/TrabajadorAsalariado.java	(date 1580470132784)
+@@ -0,0 +1,18 @@
++package equipo;
++
++import herencia.Persona;
++
++public class TrabajadorAsalariado extends Persona {
++    private int pagas;
++    private double sueldo;
++
++    public TrabajadorAsalariado(String nombre, String apellido, String dni, int pagas, double sueldo) {
++        super(nombre, apellido, dni);
++        this.pagas = pagas;
++        this.sueldo = sueldo;
++    }
++
++    public double calcularSueldoMes() {
++        return this.sueldo / this.pagas;
++    }
++}
+Index: T5_POO/src/equipo/TrabajadorAutonomo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/equipo/TrabajadorAutonomo.java	(date 1580472494062)
++++ T5_POO/src/equipo/TrabajadorAutonomo.java	(date 1580472494062)
+@@ -0,0 +1,9 @@
++package equipo;
++
++import herencia.Persona;
++
++public class TrabajadorAutonomo extends Persona {
++
++
++
++}
+Index: T5_POO/src/gasolinera/Surtidor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/gasolinera/Surtidor.java	(date 1580891247018)
++++ T5_POO/src/gasolinera/Surtidor.java	(date 1580891247018)
+@@ -0,0 +1,65 @@
++package gasolinera;
++
++public class Surtidor {
++    private int capacidadTotal, capacidadActual;
++    private String tipoGasolina;
++    private boolean funcionamiento;
++
++    public Surtidor(int capacidadTotal, String tipoGasolina) {
++        this.capacidadActual = capacidadTotal;
++        this.funcionamiento = true;
++    }
++
++    public Surtidor(String tipoGasolina) {
++        this.tipoGasolina = tipoGasolina;
++        this.capacidadActual=0;
++        this.capacidadTotal=0;
++        this.tipoGasolina=null;
++    }
++
++    public void arreglar(){
++        this.funcionamiento=true;
++
++    }
++
++    public void rellenar(int capacidad){
++     this.capacidadTotal=capacidad;
++    }
++
++    public void quitarGasolina(int gasolinaQuitar){
++        capacidadTotal-=gasolinaQuitar;
++    }
++
++
++    public int getCapacidadTotal() {
++        return capacidadTotal;
++    }
++
++    public int getCapacidadActual() {
++        return capacidadActual;
++    }
++
++    public String getTipoGasolina() {
++        return tipoGasolina;
++    }
++
++    public boolean isFuncionamiento() {
++        return funcionamiento;
++    }
++
++    public void setCapacidadTotal(int capacidadTotal) {
++        this.capacidadTotal = capacidadTotal;
++    }
++
++    public void setCapacidadActual(int capacidadActual) {
++        this.capacidadActual = capacidadActual;
++    }
++
++    public void setTipoGasolina(String tipoGasolina) {
++        this.tipoGasolina = tipoGasolina;
++    }
++
++    public void setFuncionamiento(boolean funcionamiento) {
++        this.funcionamiento = funcionamiento;
++    }
++}
+Index: T5_POO/src/gasolinera/Coche.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/gasolinera/Coche.java	(date 1580895233778)
++++ T5_POO/src/gasolinera/Coche.java	(date 1580895233778)
+@@ -0,0 +1,19 @@
++package gasolinera;
++
++public class Coche {
++
++    private String tipoGasolina;
++    private int litrosDeposito;
++
++    public Coche(String tipo){
++        this.tipoGasolina=tipo;
++        this.litrosDeposito=0;
++
++    }
++
++         public void ponerGasolina(int litros, Surtidor surtidor){
++        surtidor.quitarGasolina(0);
++
++
++         }
++}
+Index: T5_POO/src/gasolinera/Gasolinera.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/gasolinera/Gasolinera.java	(date 1580893184089)
++++ T5_POO/src/gasolinera/Gasolinera.java	(date 1580893184089)
+@@ -0,0 +1,41 @@
++package gasolinera;
++
++import java.util.ArrayList;
++
++public class Gasolinera {
++    private String nombre;
++    ArrayList<Surtidor> surtidores=new ArrayList();
++    private int ganancias;
++
++    public Gasolinera(String nombre){
++        this.nombre=nombre;
++        ganancias=0;
++    }
++    public int obtenerGanancias(){
++        return ganancias;
++    }
++
++    public String getNombre() {
++        return nombre;
++    }
++
++    public ArrayList<Surtidor> getSurtidores() {
++        return surtidores;
++    }
++
++    public int getGanancias() {
++        return ganancias;
++    }
++
++    public void setNombre(String nombre) {
++        this.nombre = nombre;
++    }
++
++    public void setSurtidores(ArrayList<Surtidor> surtidores) {
++        this.surtidores = surtidores;
++    }
++
++    public void setGanancias(int ganancias) {
++        this.ganancias = ganancias;
++    }
++}
+Index: T5_POO/src/cajero/EntradaCajero.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/cajero/EntradaCajero.java	(date 1580468062733)
++++ T5_POO/src/cajero/EntradaCajero.java	(date 1580468062733)
+@@ -0,0 +1,77 @@
++package cajero;
++
++import java.util.Hashtable;
++import java.util.Scanner;
++
++public class EntradaCajero {
++    public static void main(String[] args) {
++      /*  Cuenta cuenta = new Cuenta(1, 123, 1000);
++        cuenta.ingresar(200);
++        cuenta.sacar(2000);
++
++        Persona persona = new Persona("joze", "apellido", "ASD", cuenta);
++        Cuenta cuenta2 = new Cuenta(2, 1234,8756);
++        persona.agregarCuenta(cuenta2);
++        persona.listarCuentas();
++        Persona persona2=new Persona("df","gwef","awd");
++        persona2.listarCuentas(); */
++
++        Hashtable<String, Persona> listaBanco = new Hashtable();
++        Scanner sc = new Scanner(System.in);
++        int id = 0;
++
++        int opcion;
++        do {
++            System.out.println("1. Crear cuenta");
++            System.out.println("2. Sacar dinero");
++            System.out.println("3. Ingresar dinero");
++            System.out.println("4 Mostrar datos");
++            System.out.println("5. Salir");
++            System.out.println("Introduce opción");
++            opcion = sc.nextInt();
++            switch (opcion) {
++                case 1:
++                    System.out.println("Introduce nombre, apellido y DNI");
++                    String nombre = sc.next();
++                    String apellido = sc.next();
++                    String dni = sc.next();
++                    System.out.println("Introduce pin y saldo");
++                    int pin = sc.nextInt();
++                    double saldo = sc.nextDouble();
++                    Cuenta cuenta = new Cuenta(id, pin, saldo);
++                    Persona persona = new Persona(nombre, apellido, dni, cuenta);
++                    listaBanco.put(persona.getDni(), persona);
++                    id++;
++                    break;
++                case 2:
++                    System.out.println("introduce dni");
++                    String dniSacar=sc.next();
++                    if(listaBanco.contains(dniSacar)){
++                        System.out.println("introduce pin");
++                        int pinSacar=sc.nextInt();
++                         persona= listaBanco.get(dniSacar);
++
++                    }
++                    break;
++                case 3:
++
++                    break;
++                case 4:
++                    System.out.println("introduce dni");
++                    String dniBuscar = sc.next();
++                    if (listaBanco.contains(dniBuscar)) {
++                        Persona persona1 = listaBanco.get(dniBuscar);
++                        persona1.listarCuentas();
++                    } else {
++                        System.out.println("No hay clientes con ese dni");
++                    }
++                    break;
++                case 5:
++                    System.out.println("Saliendo...");
++                    break;
++
++            }
++        } while (opcion != 5);
++
++    }
++}
+Index: T5_POO/src/ConsumicionAplicacion/EntradaConsumicion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/ConsumicionAplicacion/EntradaConsumicion.java	(date 1580979533111)
++++ T5_POO/src/ConsumicionAplicacion/EntradaConsumicion.java	(date 1580979533111)
+@@ -0,0 +1,51 @@
++package ConsumicionAplicacion;
++
++import java.util.ArrayList;
++import java.util.Enumeration;
++import java.util.Hashtable;
++
++public class EntradaConsumicion {
++
++    public static void main(String[] args) {
++      /*  Hashtable<Integer, Cuenta> hashtable = new Hashtable();
++        Cuenta cuenta = new Cuenta(0);
++        hashtable.put(cuenta.getId(), cuenta);
++        Articulo a = new Articulo("Refresco", 1.20);
++
++        hashtable.get(0).agregarArticulos(a);
++        hashtable.get(0).agregarArticulos(a);
++        hashtable.get(0).agregarArticulos(a);
++        hashtable.get(0).agregarArticulos(a);
++        System.out.println("El coste total es " + hashtable.get(0).getCosteTotal());
++        hashtable.get(0).setEstado(true);
++        Enumeration<Cuenta> elementos = hashtable.elements();
++        while (elementos.hasMoreElements()) {
++            Cuenta c = elementos.nextElement();
++            if(c.isEstado()) {
++            c.getCosteTotal();
++            }
++        }*/
++
++        ArrayList<Cuenta> arrayList = new ArrayList();
++        Cuenta cuenta = new Cuenta(0);
++        Articulo a = new Articulo("Refresco", 1.20);
++        arrayList.add(cuenta);
++        //arrayList.get(0).agregarArticulos();
++        Cuenta cuentaEncontrada = null;
++        for (Cuenta c : arrayList) {
++            if (c.getId() == 0) {
++                cuentaEncontrada = c;
++                break;
++            }
++        }
++        cuentaEncontrada.agregarArticulos(a);
++        cuentaEncontrada.getCosteTotal();
++        cuentaEncontrada.setEstado(true);
++
++        for (Cuenta c : arrayList) {
++            if (c.isEstado()) {
++                c.getCosteTotal();
++            }
++        }
++    }
++}
+Index: T5_POO/src/Herencia2/PersonaH.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- T5_POO/src/Herencia2/PersonaH.java	(date 1581070765995)
++++ T5_POO/src/Herencia2/PersonaH.java	(date 1581070765995)
+@@ -0,0 +1,32 @@
++package Herencia2;
++
++public abstract class PersonaH {
++
++    protected String nombre, apellido;
++
++    public PersonaH(String nombre, String apellido) {
++        this.nombre = nombre;
++        this.apellido = apellido;
++    }
++
++    public void setNombre(String nombre) {
++        this.nombre = nombre;
++    }
++
++    public void setApellido(String apellido) {
++        this.apellido = apellido;
++    }
++
++    public String getNombre() {
++        return nombre;
++    }
++
++    public String getApellido() {
++        return apellido;
++    }
++
++
++    public void mostrarDatos() {
++        System.out.println("Datos mostrados desde persona");
++    }
++}

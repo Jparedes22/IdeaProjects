@@ -1,4 +1,4 @@
-package ejercicioEmpresa;
+package herenciaTrabajadores;
 
 public class Trabajador {
 }
