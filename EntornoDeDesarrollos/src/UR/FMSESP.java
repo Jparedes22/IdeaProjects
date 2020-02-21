@@ -9,7 +9,7 @@ public class FMSESP {
 
     public static void main(String[] args) {
         String opcion;
-        String[] mc = {"Chuty", "Skone", "Bnet", "Blon"};
+
 
 
         do {
