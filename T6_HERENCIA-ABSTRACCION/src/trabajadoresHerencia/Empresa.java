@@ -1,10 +1,10 @@
-package TrabajadoresHerencia;
+package trabajadoresHerencia;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
 
 public class Empresa {
-    Hashtable<String, Trabajador> empresaElementos;
+    /*Hashtable<String, Trabajador> empresaElementos;
 
     public Empresa() {
         empresaElementos = new Hashtable();
@@ -48,5 +48,5 @@ public class Empresa {
 
     public Hashtable<String, Trabajador> getEmpresaElementos() {
         return empresaElementos;
-    }
+    }*/
 }

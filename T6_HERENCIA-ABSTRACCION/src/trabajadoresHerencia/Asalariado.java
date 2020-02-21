@@ -1,10 +1,10 @@
 package trabajadoresHerencia;
 
-public final class Asalariado extends Contratado {
+public final class Asalariado  {
 
    private int nPagas;
 
-    public Asalariado(String nombre, String apellido, String dni, int sueldo, int nPagas) {
+   /* public Asalariado(String nombre, String apellido, String dni, int sueldo, int nPagas) {
         super(nombre, apellido, dni, sueldo);
         this.nPagas = nPagas;
     }
@@ -20,5 +20,5 @@ public final class Asalariado extends Contratado {
     @Override
     public String mostrarDatos() {
         return super.mostrarDatos()+String.format("%d %n",nPagas);
-    }
+    }*/
 }

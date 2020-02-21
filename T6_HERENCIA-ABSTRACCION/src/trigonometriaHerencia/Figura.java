@@ -1,6 +1,6 @@
-package TrigonometriaHerencia;
+package trigonometriaHerencia;
 
-public class Circulo {
+public class Figura {
 
     
 }
