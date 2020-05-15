@@ -39,11 +39,22 @@ def reply_to_tweets():
         print(str(mention.id) + ' - ' + mention.full_text, flush=True)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
-        if '#elbot' in mention.full_text.lower():
-            print('se ha encontrado el hashtag', flush=True)
+        if '#elbotdev' in mention.full_text.lower():
+            print('se ha encontrado el hashtag #elbotdev', flush=True)
             print('constestando...', flush=True)
             api.update_status('Hola @' + mention.user.screen_name +
-                    ' me alegra que utilices mi bot #ElBot', mention.id)
+                    ' me alegra que utilices mi servicio de automatización, puedes seguir a mi creador @NeoSulkez #ElBotDev', mention.id)
+
+        if '#elbotad' in mention.full_text.lower():
+            print('se ha encontrado el hashtag #elbotad', flush=True)
+            print('constestando...', flush=True)
+            api.update_status('Hola @' + mention.user.screen_name +
+                    ' ¿Interesado en  scripting y ciber seguridad? Prueba a entrar a la pagina jesusninoc.com #ElBotAd. ', mention.id)
+        if '#elbotinfo' in mention.full_text.lower():
+            print('se ha encontrado el hashtag #elbotinfo', flush=True)
+            print('constestando...', flush=True)
+            api.update_status('Hola @' + mention.user.screen_name +
+                    ' soy un bot creado por @NeoSulkez usando Python, la librería Tweepy y el editor de texto Atom #ElBotInfo', mention.id)
 
 while True:
     reply_to_tweets()
